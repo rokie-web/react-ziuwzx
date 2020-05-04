@@ -1,11 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-ReactDOM.render(
-  <ul>
-    <li>One</li>
-    <li>Two</li>
-    <li>Three</li>
-  </ul>, 
-  document.getElementById('root')
-);
+function MyInfo() {
+  return (
+    <section>
+        <h1>Rob</h1>
+        <p>Currently learning some react</p>
+        
+        <ul>
+          <li>Italy</li>
+          <li>Amsterdam</li>
+          <li>Hamburg</li>
+        </ul>
+    </section>
+  )
+}
+
+ReactDOM.render(<MyInfo />, document.getElementById('root'))
