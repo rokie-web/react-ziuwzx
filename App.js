@@ -1,10 +1,19 @@
+import './normalize.css';
+import './style.css';
+
 import React from 'react';
 
-import CheckboxList from './components/CheckboxList';
+import TodoItem from './components/TodoItem';
 
 function App() {
   return (
-    <CheckboxList />
+    <div className='TodoApp'>
+      <form class='TodoApp-container'>
+        <TodoItem />
+        <TodoItem />
+        <TodoItem />
+      </form>
+    </div>
   )
 }
 

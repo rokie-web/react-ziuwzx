@@ -1,3 +1,20 @@
-h1, p {
-  font-family: Lato;
+.TodoApp {
+  font-family: 'Lato';
+}
+
+.TodoApp .TodoApp-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.TodoApp .TodoApp-item {
+  display: flex;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.TodoApp .TodoApp-item label, input {
+  margin: 0 1rem 0 0;
+  cursor: pointer;
 }
