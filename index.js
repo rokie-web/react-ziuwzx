@@ -1,4 +1,11 @@
-import React, { Component } from 'react';
-import { render } from 'react-dom';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-render(<h1>Hello world!</h1>, document.getElementById('root'));
+ReactDOM.render(
+  <ul>
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+  </ul>, 
+  document.getElementById('root')
+);
