@@ -5,7 +5,12 @@ class  TodoItem extends Component {
   return (
       <div className='TodoApp-item'>
         <label>
-          <input type="checkbox" checked={this.props.item.completed} />
+          <input 
+            type="checkbox" 
+            defaultChecked={this.props.item.completed} 
+            onChange={() => console.log('Changed!')} 
+          />
+
           <span>{this.props.item.text}</span>
         </label>
       </div>
