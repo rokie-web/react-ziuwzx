@@ -18,3 +18,9 @@
   margin: 0 1rem 0 0;
   cursor: pointer;
 }
+
+.TodoApp .TodoApp-item--disabled {
+  font-style: italic;
+  text-decoration: line-through; 
+  color: #bebebe;
+}

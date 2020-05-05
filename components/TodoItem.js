@@ -11,7 +11,10 @@ class TodoItem extends Component {
             onChange={() => this.props.handleChange(this.props.item.id)} 
           />
 
-          <span>{this.props.item.text}</span>
+          <span 
+            className={this.props.item.completed && 'TodoApp-item--disabled'}>
+              {this.props.item.text}
+          </span>
         </label>
       </div>
     )
